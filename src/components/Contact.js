@@ -26,7 +26,7 @@ function Contact() {
           <FaPhoneAlt className="icon" />
           <div>
             <h3>Phone</h3>
-            <a href="tel:+256 7560956767">+256 7560956767</a>
+            <a href="tel:+2567560956767">+256756253902</a>
           </div>
         </div>
 
@@ -35,11 +35,11 @@ function Contact() {
           <div>
             <h3>WhatsApp</h3>
             <a
-              href="https://wa.me/message/B7II4NFLJK7YMI"
+              href="https://wa.me/+256760956767"
               target="_blank"
               rel="noreferrer"
             >
-              Chat on WhatsApp
+              +256760956767
             </a>
           </div>
         </div>
