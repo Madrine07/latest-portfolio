@@ -1,21 +1,26 @@
 import React from "react";
 import "../styles/Projects.css";
+import portfolioImg from '../images/portfolio.JPG';
+import phics from '../images/BEL2.jfif';
+import dina from '../images/dina.JPG';
+import system from '../images/Booksystem.JPG';
+
 
 const projects = [
   {
     title: "Portfolio Website",
     description:
       "My personal website built with React showcasing my skills and projects.",
-    imageUrl: "/images/portfolio-screenshot.png", // Replace with your screenshot
+    imageUrl: portfolioImg, // Replace with your screenshot
     tech: ["React", "CSS", "JavaScript"],
     liveUrl: "", // Add when hosted
-    repoUrl: "https://github.com/yourusername/portfolio",
+    repoUrl: "https://github.com/Madrine07/latest-portfolio.git",
   },
   {
     title: "Graphics Work",
     description:
       "A collection of graphic design projects and visuals I've created.",
-    imageUrl: "/images/graphics-thumbnail.png", // Replace with your graphic showcase
+    imageUrl: phics, // Replace with your graphic showcase
     tech: ["Graphic Design"],
     liveUrl: "",
     repoUrl: "",
@@ -24,19 +29,19 @@ const projects = [
     title: "Book Management System",
     description:
       "React app to manage books with add, update, and delete features.",
-    imageUrl: "/images/book-management-screenshot.png", // Replace screenshot
+    imageUrl: system, // Replace screenshot
     tech: ["React", "JavaScript"],
     liveUrl: "",
-    repoUrl: "https://github.com/yourusername/book-management-system",
+    repoUrl: "https://github.com/Madrine07/Book-management-system.git",
   },
   {
     title: "Apartment Booking Website",
     description:
       "A full-stack booking website for apartments, built with React and Flask.",
-    imageUrl: "/images/apartment-website-screenshot.png", // Replace screenshot
+    imageUrl: dina, // Replace screenshot
     tech: ["React", "Flask", "MySQL"],
-    liveUrl: "",
-    repoUrl: "https://github.com/yourusername/apartment-booking",
+    // liveUrl: "",
+    // repoUrl: "https://github.com/yourusername/apartment-booking",
   },
 ];
 

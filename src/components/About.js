@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import aboutImage from "../images/bigpic.jpeg"; // replace with your image
+import aboutImage from "../images/Madrine.jfif"; // replace with your image
 
 function About() {
   return (
