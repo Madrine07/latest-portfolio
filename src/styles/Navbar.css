@@ -1,0 +1,128 @@
+
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: cyan;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 9999;
+  box-shadow: 0 0 8px cyan; /* subtle cyan glow */
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 0 15px cyan; /* stronger glow on hover */
+}
+
+/* Left side - profile + name */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid cyan;
+}
+.cv-button {
+  background-color: cyan;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cv-button:hover {
+  background-color: #00a3a3;
+}
+.cv-button,
+.cv-button:link,
+.cv-button:visited,
+.cv-button:hover,
+.cv-button:active {
+  text-decoration: none !important;
+}
+li.a {
+  text-decoration: none !important;
+}
+.navbar-name {
+  font-size: larger;
+  font-weight: 500;
+}
+
+/* Desktop menu */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+  font-size: larger;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: larger;
+}
+
+.navbar-links li:hover {
+  color: black;
+  background-color: cyan;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Mobile menu hidden by default */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: cyan;
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: -100%;
+    background-color: #000;
+    flex-direction: column;
+    width: 200px;
+    padding: 15px;
+    transition: right 0.3s ease-in-out;
+    border-left: 2px solid cyan;
+  }
+
+  .navbar-links.active {
+    right: 0;
+  }
+
+  .navbar-links li {
+    padding: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

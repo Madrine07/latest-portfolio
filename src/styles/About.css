@@ -1,0 +1,114 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  /* background: black; */
+  color: white;
+  min-height: 90vh;
+}
+p{
+    font-size: larger;
+}
+
+.about-left {
+  flex: 1;
+  padding: 20px;
+  animation: fadeLeft 1s ease-out;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeRight 1s ease-out;
+}
+
+.about-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px cyan;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: cyan;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.about-btn:hover {
+  background: white;
+}
+
+/* Animations */
+@keyframes fadeLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-right {
+    margin-top: 20px;
+  }
+}
+
+
+/* General responsive image rule */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional for styling */
+}
+
+/* Specific for About/Home page layout */
+
+.about-image {
+  max-width: 400px; /* Desktop limit */
+  width: 100%;      /* Let it scale down */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+ 
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  
+  .about-image {
+    max-width: 90%; /* make them fit nicely */
+    margin-bottom: 1rem;
+  }
+}

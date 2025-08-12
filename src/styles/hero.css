@@ -1,0 +1,137 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  min-height: 90vh;
+  padding: 20px;
+  /* background: black; */
+  color: white;
+}
+h1{
+  font-size: 35px;
+}
+h2{
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.home-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px cyan;
+}
+.home-image {
+  animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 15px cyan;
+  }
+  to {
+    box-shadow: 0 0 30px cyan;
+  }
+}
+
+
+.home-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.typed-text {
+  font-size: 30px;
+  color: cyan;
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: cyan;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-left {
+    margin-bottom: 20px;
+  }
+}
+.home-left {
+  animation: fadeLeft 1s ease-out;
+}
+.home-right {
+  animation: fadeRight 1s ease-out;
+}
+
+@keyframes fadeLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeRight {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* General responsive image rule */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional for styling */
+}
+
+/* Specific for About/Home page layout */
+.home-image{
+  max-width: 400px; /* Desktop limit */
+  width: 100%;      /* Let it scale down */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .home-section{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image
+  {
+    max-width: 90%; /* make them fit nicely */
+    margin-bottom: 1rem;
+  }
+}
