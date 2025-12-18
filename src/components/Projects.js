@@ -40,7 +40,7 @@ const projects = [
       "A full-stack booking website for apartments, built with React and Flask.",
     imageUrl: dina, // Replace screenshot
     tech: ["React", "Flask", "MySQL"],
-    // liveUrl: "",
+    liveUrl: "https://dina-apartments.com/",
     repoUrl: "https://dina-apartments.com/",
   },
 ];
