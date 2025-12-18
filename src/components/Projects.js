@@ -41,7 +41,7 @@ const projects = [
     imageUrl: dina, // Replace screenshot
     tech: ["React", "Flask", "MySQL"],
     // liveUrl: "",
-    // repoUrl: "https://github.com/yourusername/apartment-booking",
+    repoUrl: "https://dina-apartments.com/",
   },
 ];
 
